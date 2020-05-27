@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>home page</title>
+  </head>
+  <body>
+    {{>header}}
+    <div class="body">
+      <div class="text">
+        <h2>use this app for current weather report</h2>
+        <h3>Climate is what we expect, weather is what we get.</h3>
+        <p> Mark Twain</p>
+        <p id="para"></p>
+      </div>
+       <form class="form">
+         <label for="address">ADDRESS</label><br>
+         <input id="address" type="text" name="" value="" placeholder="search for your location">
+         <button type="submit" name="button">search</button>
+       </form>
+    </div>
+    {{>footer}}
+  <script src="/js/app.js" charset="utf-8"></script>
+  </body>
+</html>
