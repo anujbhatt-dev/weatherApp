@@ -5,7 +5,7 @@ document.querySelector('form').addEventListener('submit',(e)=>{
     const area=document.querySelector('input').value;
     console.log(area);
     para.textContent="loading...."
-fetch("http://localhost:3000/weather?location="+area).then((response) => {
+fetch("/weather?location="+area).then((response) => {
   response.json().then((data) => {
     if (data.error) {
       return para.textContent = "PLAESE ENTER VALID LOCATION";

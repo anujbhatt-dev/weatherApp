@@ -5,6 +5,7 @@ const express = require("express");
 const hbs = require("hbs");
 
 const app = express();
+const port = process.env.PORT || 3000 ;
 
 const publicDirPath = path.join(__dirname,"../public");
 const viewsPath= path.join(__dirname,"../views");
@@ -70,6 +71,6 @@ app.get('*',(req,res)=>{
   res.render(viewsPath+"/error");
 })
 
-app.listen(3000,()=>{
-  console.log("up ans running on port 3000");
+app.listen(port,()=>{
+  console.log("up ans running on port "+port);
 });
